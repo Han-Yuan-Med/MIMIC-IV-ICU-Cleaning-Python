@@ -45,7 +45,7 @@ Input features
 
 Output labels
 
-Finally Done!!! You can explore various models for binary prediction using the `mortality` label and different methods for survival prediction using the `survival time` label.
+Finally Done!!! You can explore various models for binary prediction using the `mortality` label and different methods for survival prediction using the `survival time` label. Using the data cleaned by this respiratory, we show how to self-distillate an interpretable clinical score table from black-box neural networks.
 
 <p align="center">
   <img src="https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/dance-spongebob.gif" />
@@ -53,6 +53,8 @@ Finally Done!!! You can explore various models for binary prediction using the `
 
 
 ## Citation
+If you use MIMIC-IV Preprocessing in a scientific publication, we would appreciate citations to the following paper.
+
 Yuan H, Ahmed A, Kang L, Miao C, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022. https:XXX.
 
 ## Contact
