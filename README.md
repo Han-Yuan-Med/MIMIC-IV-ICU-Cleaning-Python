@@ -10,7 +10,7 @@
 - [Contact](#contact)
 
 ## Aim
-This respiratory aims to prepare a static tabular dataset for `mortality` or `survival time` prediction in ICU. The input features contain `demographics`, XXX, etc. The pipeline processes the raw data downloaded from PhysioNet to a structured, outlier removed, missing imputed, and well-labelled data.
+Larger-scale open-access medical datasets facilitate various research on discovering potential medical evidences, formulating novel medication and treatment plan, and supporting other decision-making via SOTA techniques. `MIMIC` series are the most popular benchamrk datasets, which provided critical care data for over 40,000 patients admitted to intensive care units (`ICU`) at the Beth Israel Deaconess Medical Center. As the latest verison of `MIMIC` family, `MIMIC-IV` highlights data provenance and facilitates both individual and combined use of disparate data sources. However, the information provided by `MIMIC-IV` is in separted `csv.gz` files, which requires certain time and expertise to preprocess and clean. This respiratory aims to prepare a static tabular dataset for `mortality` or `survival time` prediction in ICU. The input features contain `demographics`, XXX, etc. The pipeline processes the raw data downloaded from PhysioNet to a structured, outlier removed, missing imputed, and well-labelled data.
 
 ## Steps
 ### Step (i): Download MIMIC-IV raw ICU data
