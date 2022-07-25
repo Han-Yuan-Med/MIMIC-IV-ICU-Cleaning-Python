@@ -45,7 +45,7 @@ Input features
 
 Output labels
 
-Finally Done!!! You can explore various models for binary prediction using the `mortality` label and different methods for survival prediction using the `survival time` label. Using the data cleaned by this respiratory, we show how to self-distillate an interpretable clinical score table from black-box neural networks in this [paper]().
+Finally Done!!! You can explore various models for binary prediction using the `mortality` label and different methods for survival prediction using the `survival time` label. For instance, using the data cleaned by this respiratory, we show how to self-distillate an interpretable clinical score table from black-box neural networks in this [paper]().
 
 <p align="center">
   <img src="https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/dance-spongebob.gif" />
