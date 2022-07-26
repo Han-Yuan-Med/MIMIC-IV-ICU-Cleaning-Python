@@ -29,12 +29,14 @@ Check the `MIMIC-IV-ICU-Data-Preprocessing-main.zip` in PC `Downloads` folder
 
 Unfold `MIMIC-IV-ICU-Data-Preprocessing-main.zip`
 
-Unfold `mimic-iv-1.0.zip` to the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
+Unfold `admissions.csv.gz`, `patients.csv.gz`, `d_items.csv.gz`, `chartevents.csv.gz` in `mimic-iv-1.0.zip` to the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
 
 ![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/Picture2.png)
 
 ### Step (iii): Run the preprocessing pipeline
 Open `MIMIC Preprocess` python script and run the code step by step
+
+You can refer to the inline annotations to check the function of each step
 
 ### Step (iv): Check generated csv file
 Final processed data `MIMIC-IV-ICU.csv` is stored under the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
