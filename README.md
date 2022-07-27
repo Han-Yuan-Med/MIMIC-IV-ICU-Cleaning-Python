@@ -10,7 +10,7 @@
 - [Contact](#contact)
 
 ## Aim
-`MIMIC-IV` is a large-scale open-access medical datasets which provide critical care data for over 40,000 patients admitted to intensive care units (`ICU`) at the Beth Israel Deaconess Medical Center. Appropriate mining of this dataset could facilitate patient care improvement and medical knowledge discovery. However, `MIMIC-IV` only provides raw data which is in separted `csv.gz` files and thus requires certain time and expertise to preprocess it. This respiratory aims to prepare a static tabular dataset for `mortality` or `survival time` prediction in ICU. The input features contain `demographics`, XXX, etc. The pipeline processes the raw data downloaded from PhysioNet to a structured, outlier removed, missing imputed, and well-labelled `csv` file.
+`MIMIC-IV` is a large-scale open-access medical datasets which provide critical care data for over 40,000 patients admitted to intensive care units (`ICU`) at the Beth Israel Deaconess Medical Center. Appropriate mining of this dataset could facilitate patient care improvement and medical knowledge discovery. However, `MIMIC-IV` only provides raw data which is in separted `csv.gz` files and thus requires certain time and expertise to preprocess it. This respiratory aims to prepare a static tabular dataset for `inpatient death` prediction in ICU. The input features contain `demographics`, `lab tests`, `vital signs`, etc. The pipeline processes the raw data downloaded from PhysioNet to a structured, outlier removed, missing imputed, and well-labelled `csv` file.
 
 ## Steps
 ### Step (i): Download MIMIC-IV raw ICU data
@@ -57,7 +57,7 @@ Finally Done!!! You can explore various models for binary prediction using the `
 ## Citation
 If you use MIMIC-IV Preprocessing in a scientific publication, we would appreciate citations to the following paper.
 
-Yuan H, Ahmed A, Kang L, Miao C, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022. https:XXX.
+Yuan H, Ahmed A, Wu Y. An empirical study of the effect of background data size on the stability of SHapley Additive exPlanations (SHAP) for deep learning models. arXiv. 2022. https:XXX.
 
 ## Contact
 - Han Yuan (Email: <yuanhannku@163.com>)
