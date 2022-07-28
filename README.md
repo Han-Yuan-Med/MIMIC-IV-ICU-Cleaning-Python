@@ -18,6 +18,8 @@ Follow the instructions on https://physionet.org/content/mimiciv/1.0/ to obtain 
 
 Click `Download the ZIP file` button
 
+![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/Picture2.png)
+
 Check `mimic-iv-1.0.zip` in PC `Downloads` folder
 
 ![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/Picture1.png)
@@ -25,13 +27,17 @@ Check `mimic-iv-1.0.zip` in PC `Downloads` folder
 ### Step (ii): Download this respiratory
 Click `Download ZIP button`
 
+![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/Picture2.png)
+
 Check the `MIMIC-IV-ICU-Data-Preprocessing-main.zip` in PC `Downloads` folder
 
 Unfold `MIMIC-IV-ICU-Data-Preprocessing-main.zip`
 
-Unfold `admissions.csv.gz`, `patients.csv.gz`, `d_items.csv.gz`, `chartevents.csv.gz` in `mimic-iv-1.0.zip` to the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
+Unfold `admissions.csv.gz`, `patients.csv.gz`, `d_items.csv.gz`, `icustays.csv.gz`, and `chartevents.csv.gz` in `mimic-iv-1.0.zip` to the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
 
-![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/Picture2.png)
+An overview of used csv file in this cleaning process and their locations in each folder are given below
+
+![alt text](https://github.com/Han-Yuan-Med/MIMIC-IV-ICU-Data-Preprocessing/blob/main/MIMIC-IV.png)
 
 ### Step (iii): Run the preprocessing pipeline
 Open `MIMIC Preprocess` python script and run the code step by step
