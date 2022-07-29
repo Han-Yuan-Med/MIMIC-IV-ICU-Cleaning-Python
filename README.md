@@ -10,7 +10,7 @@
 - [Contact](#contact)
 
 ## Aim
-`MIMIC-IV` is a large-scale open-access medical datasets which provide critical care data for over 40,000 patients admitted to intensive care units (`ICU`) at the Beth Israel Deaconess Medical Center. Appropriate mining of this dataset could facilitate patient care improvement and medical knowledge discovery. However, `MIMIC-IV` only provides raw data which is in separted `csv.gz` files and thus requires certain time and expertise to preprocess it. This respiratory aims to prepare a static tabular dataset for `inpatient death` prediction in ICU. The input features contain `demographics`, `lab tests`, `vital signs`, etc. The pipeline processes the raw data downloaded from PhysioNet to a structured, outlier removed, missing imputed, and well-labelled `csv` file.
+`MIMIC-IV` is a large-scale open-access medical datasets which provide critical care data for over 40,000 patients admitted to intensive care units (`ICU`) at the Beth Israel Deaconess Medical Center. Appropriate mining of this dataset could facilitate patient care improvement and medical knowledge discovery. However, `MIMIC-IV` only provides raw data which is in separted `csv.gz` files and thus requires certain time and expertise to preprocess it. This respiratory aims to prepare both static and temporal tabular datasets for `inpatient death` prediction in ICU. The input features contain `demographics`, `lab tests`, `vital signs`, etc. The pipeline processes the raw data downloaded from PhysioNet to structured and well-labelled `csv` files.
 
 ## Steps
 ### Step (i): Download MIMIC-IV raw ICU data
@@ -45,13 +45,9 @@ Open `MIMIC Preprocess` python script and run the code step by step
 You can refer to the inline annotations to check the function of each step
 
 ### Step (iv): Check generated csv file
-Final processed data `MIMIC-IV-ICU.csv` is stored under the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
+Final processed data `mimic-iv-icu-static.csv` and `mimic-iv-icu-temporal.csv` are stored under the same folder of `MIMIC-IV-ICU-Data-Preprocessing-main`
 
-A short description on the final data:
-
-Input features
-
-Output labels
+A quick overview of the generated static and temporal tabular dataset: included feature information are elaborated in `.csv` and final outcome is inpatient death. In `mimic-iv-icu-static.csv`, each block records a patient's mean value of all obsevations on a specific feature in the first 24h ICU stay. In `mimic-iv-icu-temporal.csv`, each patient has 24 rows which stands for the first 24h in ICU and each block records his/her mean value of all observations on a specific feature in this 1h. `None` in these two files refers to missing.
 
 Finally Done!!! You can explore various models for binary prediction using the `mortality` label and different methods for survival prediction using the `survival time` label. For instance, using the data cleaned by this respiratory, we show how to self-distillate an interpretable clinical score table from black-box neural networks in this [paper]().
 
